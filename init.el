@@ -2,7 +2,7 @@
 (setq linum-format "%3d ")
 (add-hook 'find-file-hooks (lambda () (linum-mode 1)))
 
-require 'package)
+(require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
