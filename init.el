@@ -1,11 +1,12 @@
-(require 'linum)
-(setq linum-format "%3d ")
-(add-hook 'find-file-hooks (lambda () (linum-mode 1)))
+;(require 'linum)
+;(setq linum-format "%3d ")
+;(add-hook 'find-file-hooks (lambda () (linum-mode 1)))
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
+(setq evil-want-C-i-jump nil)
 (require 'evil)
 (evil-mode 1)
 
